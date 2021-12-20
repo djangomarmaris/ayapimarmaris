@@ -1,0 +1,678 @@
+{% extends "base.html" %}
+
+{% load static i18n %}
+
+{% block css %}
+
+{% endblock %}
+
+{% block seo %}
+
+
+<title>A Yapı</title>
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="" />
+
+<link rel="canonical" href=""/>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+
+<meta name="robots" content="index,follow"/>
+
+<meta name="googlebot" content="index,follow"/>
+
+<meta name="author" content="İhsan Gürol Demirtaş">
+
+<meta name="publisher" content="2020.01" />
+
+{% endblock %}
+
+
+
+
+{% block content %}
+
+
+
+
+
+
+
+
+
+	<!--
+	#################################
+		- THEMEPUNCH BANNER -
+	#################################
+	-->
+	<div class="tp-banner-container main-banner">
+		<div class="tp-banner white-slide " >
+			<ul>	<!-- SLIDE  -->
+	<li data-transition="fade" data-slotamount="7" data-masterspeed="500" data-thumb=""  data-saveperformance="on"  data-title="Intro Slide">
+		<!-- MAIN IMAGE -->
+		<img src="{% static 'images/slides/slidebg1.jpg' %}" alt="" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+		<!-- LAYERS -->
+
+
+
+
+
+		<div class="tp-caption grey_heavy_72 fade start"
+			data-x="60"
+			data-y="610"
+			data-speed="1000"
+			data-start="1000"
+
+			data-splitin="none"
+			data-splitout="none"
+			data-elementdelay="0.1"
+			data-endelementdelay="0.1"
+			style="z-index:7; max-width: auto; font-size:20px; letter-spacing:2px; max-height: auto; white-space: nowrap;">Design studio
+		</div>
+
+
+		<div class="tp-caption black_heavy_60 fade start"
+			data-x="60"
+			data-y="640"
+			data-speed="1000"
+			data-start="1000"
+			data-easing="Power3.easeInOut"
+			data-splitin="none"
+			data-splitout="none"
+			data-elementdelay="0.1"
+			data-endelementdelay="0.1"
+			style="z-index: 7; max-width: auto; max-height: auto; white-space: nowrap; text-transform:uppercase; line-height:72px;">Lake View
+			<br/> Studio
+		</div>
+
+
+		<div class="tp-caption customin rs-parallaxlevel-0"
+			data-x="left"
+			data-y="bottom"
+			data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+			data-speed="0"
+			data-start="10"
+			data-easing="Power3.easeInOut"
+			data-elementdelay="0.1"
+			data-endelementdelay="0.1"
+			style="z-index: 6;"><img style="width:100%;" alt="" src="{% static 'images/slides/yellow-bg.png' %}">
+		</div>
+
+
+
+		<!-- LAYER NR. 11 -->
+		<div class="tp-caption customin tp-resizeme rs-parallaxlevel-0 fade"
+			data-x="60"
+			data-y="820"
+			data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+			data-speed="1000"
+			data-start="1000"
+			data-easing="Power3.easeInOut"
+			data-splitin="none"
+			data-splitout="none"
+			data-elementdelay="0.1"
+			data-endelementdelay="0.1"
+			data-linktoslide="next"
+			style="z-index: 12; max-width: auto; max-height: auto; white-space: nowrap;"><a href='work-detail.html' class='largeredbtn'>view project</a>
+		</div>
+
+
+	</li>
+
+
+
+
+	<li data-transition="fade" data-slotamount="7" data-masterspeed="500" data-thumb=""  data-saveperformance="on"  data-title="Intro Slide">
+		<!-- MAIN IMAGE -->
+		<img src="{% static 'images/slides/slidebg2.jpg' %}" alt="" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+		<!-- LAYERS -->
+
+
+
+
+
+		<div class="tp-caption grey_heavy_72 fade start"
+			data-x="60"
+			data-y="610"
+			data-speed="1000"
+			data-start="1000"
+
+			data-splitin="none"
+			data-splitout="none"
+			data-elementdelay="0.1"
+			data-endelementdelay="0.1"
+			style="z-index:7; max-width: auto; font-size:20px; letter-spacing:2px; max-height: auto; white-space: nowrap;">Design studio
+		</div>
+
+
+		<div class="tp-caption black_heavy_60 fade start"
+			data-x="60"
+			data-y="640"
+			data-speed="1000"
+			data-start="1000"
+			data-easing="Power3.easeInOut"
+			data-splitin="none"
+			data-splitout="none"
+			data-elementdelay="0.1"
+			data-endelementdelay="0.1"
+			style="z-index: 7; max-width: auto; max-height: auto; white-space: nowrap; text-transform:uppercase; line-height:72px;">Lake View
+			<br/> Studio
+		</div>
+
+
+		<div class="tp-caption customin rs-parallaxlevel-0"
+			data-x="left"
+			data-y="bottom"
+			data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+			data-speed="0"
+			data-start="10"
+			data-easing="Power3.easeInOut"
+			data-elementdelay="0.1"
+			data-endelementdelay="0.1"
+			style="z-index: 6;"><img style="width:100%;" alt="" src="{% static 'images/slides/yellow-bg.png' %}">
+		</div>
+
+
+
+		<!-- LAYER NR. 11 -->
+		<div class="tp-caption customin tp-resizeme rs-parallaxlevel-0 fade"
+			data-x="60"
+			data-y="820"
+			data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+			data-speed="1000"
+			data-start="1000"
+			data-easing="Power3.easeInOut"
+			data-splitin="none"
+			data-splitout="none"
+			data-elementdelay="0.1"
+			data-endelementdelay="0.1"
+			data-linktoslide="next"
+			style="z-index: 12; max-width: auto; max-height: auto; white-space: nowrap;"><a href='work-detail.html' class='largeredbtn'>view project</a>
+		</div>
+
+
+	</li>
+
+
+	<li data-transition="fade" data-slotamount="7" data-masterspeed="500" data-thumb=""  data-saveperformance="on"  data-title="Intro Slide">
+		<!-- MAIN IMAGE -->
+		<img src="{% static 'images/slides/slidebg3.jpg' %}" alt="" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+		<!-- LAYERS -->
+
+
+
+
+
+		<div class="tp-caption grey_heavy_72 fade start"
+			data-x="60"
+			data-y="610"
+			data-speed="1000"
+			data-start="1000"
+
+			data-splitin="none"
+			data-splitout="none"
+			data-elementdelay="0.1"
+			data-endelementdelay="0.1"
+			style="z-index:7; max-width: auto; font-size:20px; letter-spacing:2px; max-height: auto; white-space: nowrap;">Design studio
+		</div>
+
+
+		<div class="tp-caption black_heavy_60 fade start"
+			data-x="60"
+			data-y="640"
+			data-speed="1000"
+			data-start="1000"
+			data-easing="Power3.easeInOut"
+			data-splitin="none"
+			data-splitout="none"
+			data-elementdelay="0.1"
+			data-endelementdelay="0.1"
+			style="z-index: 7; max-width: auto; max-height: auto; white-space: nowrap; text-transform:uppercase; line-height:72px;">Lake View
+			<br/> Studio
+		</div>
+
+
+		<div class="tp-caption customin rs-parallaxlevel-0"
+			data-x="left"
+			data-y="bottom"
+			data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+			data-speed="0"
+			data-start="10"
+			data-easing="Power3.easeInOut"
+			data-elementdelay="0.1"
+			data-endelementdelay="0.1"
+			style="z-index: 6;"><img style="width:100%;" alt="" src="{% static 'images/slides/yellow-bg.png' %}">
+		</div>
+
+
+
+		<!-- LAYER NR. 11 -->
+		<div class="tp-caption customin tp-resizeme rs-parallaxlevel-0 fade"
+			data-x="60"
+			data-y="820"
+			data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+			data-speed="1000"
+			data-start="1000"
+			data-easing="Power3.easeInOut"
+			data-splitin="none"
+			data-splitout="none"
+			data-elementdelay="0.1"
+			data-endelementdelay="0.1"
+			data-linktoslide="next"
+			style="z-index: 12; max-width: auto; max-height: auto; white-space: nowrap;"><a href='work-detail2.html' class='largeredbtn'>view project</a>
+		</div>
+
+
+	</li>
+
+</ul>
+<div class="tp-bannertimer"></div>	</div>
+</div>
+<div class="divider-dark"></div>
+
+
+
+
+	<!-- START CONTENT -->
+	<div class="content">
+
+		<!-- START OUR STUDIOS -->
+		<section class="our-studio">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+
+						<div class="icons">
+							<i class="icon-noun_35247_cc"></i>
+							<i class="icon-noun_75842_cc"></i>
+							<i class="icon-noun_301911_cc"></i>
+						</div>
+						<span>Keep away from people who try to belittle Good just ask Planning your ambitions Design people always do that but the really great. Friendly neighbour there that power. Keep away Architecture who try to Ambitions people do that really great.</span>
+
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END OUR STUDIOS -->
+
+
+		<!-- START OUR STUDIOS -->
+		<section class="sec-space">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-md-12">
+						<div class="main-heading">
+							<h4>Intelligent</h4>
+							<h1>Projects</h1>
+							<span>who try to belittle your ambitions Small people always do that but the really great.</span>
+						</div>
+					</div>
+
+					<div class="projects">
+
+
+						<div class="col-md-6">
+							<div class="project-sec">
+
+								<div class="work">
+									<div class="grid">
+
+									<figure class="effect-sadie">
+										<div class="image"><img src="{% static 'images/project-1.jpg' %}" alt=""></div>
+
+										<figcaption>
+											<h2><img src="{% static 'images/plus.png' %}" alt=""></h2>
+											<a href="work-detail.html"></a>
+										</figcaption>
+									</figure>
+
+									<div class="detail">
+										<span class="number">01</span>
+										<div class="text">
+											<h6>HILLSIDE RESIDENCE</h6>
+											<span class="tags">Design, Housing</span>
+										</div>
+									</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="col-md-6">
+							<div class="project-sec">
+
+								<div class="work">
+									<div class="grid">
+
+									<figure class="effect-sadie">
+										<div class="image"><img src="{% static 'images/project-1.jpg' %}" alt=""></div>
+
+										<figcaption>
+											<h2><img src="{% static 'images/plus.png' %}" alt=""></h2>
+											<a href="work-detail.html"></a>
+										</figcaption>
+									</figure>
+
+									<div class="detail">
+										<span class="number">02</span>
+										<div class="text">
+											<h6>NORWEGIAN OPERA</h6>
+											<span class="tags">Night Club, Gym</span>
+										</div>
+									</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-6">
+							<div class="project-sec">
+
+								<div class="work">
+									<div class="grid">
+
+									<figure class="effect-sadie">
+										<div class="image"><img src="{% static 'images/project-1.jpg' %}" alt=""></div>
+
+										<figcaption>
+											<h2><img src="{% static 'images/plus.png' %}" alt=""></h2>
+											<a href="work-detail.html"></a>
+										</figcaption>
+									</figure>
+
+									<div class="detail">
+										<span class="number">03</span>
+										<div class="text">
+											<h6>modern flat</h6>
+											<span class="tags">House, Studio</span>
+										</div>
+									</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-6">
+							<div class="project-sec">
+
+								<div class="work">
+									<div class="grid">
+
+									<figure class="effect-sadie">
+										<div class="image"><img src="{% static 'images/project-1.jpg' %}" alt=""></div>
+
+										<figcaption>
+											<h2><img src="{% static 'images/plus.png' %}" alt=""></h2>
+											<a href="work-detail.html"></a>
+										</figcaption>
+									</figure>
+
+									<div class="detail">
+										<span class="number">04</span>
+										<div class="text">
+											<h6>MAGGIES CARING CENTER</h6>
+											<span class="tags">Cultural, Museum</span>
+										</div>
+									</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+					</div>
+
+					<div class="view-all">
+						<a class="black-btn" href="work.html">view all projects</a>
+					</div>
+
+
+				</div>
+			</div>
+		</section>
+		<!-- END OUR STUDIOS -->
+
+
+
+		<!-- START OUR STUDIOS -->
+		<section class="sec-space clients-words">
+		  <div class="container">
+
+			<div class="col-md-12">
+				<div class="main-heading white">
+					<h4>kind-words</h4>
+					<br>
+					<h1>clients</h1>
+				</div>
+			</div>
+
+
+			<div class="col-md-12">
+
+				<div class="kind-words">
+					<div id="client-words" class="owl-carousel">
+
+						<div>
+							<p>Keep away from people who try to belittle your ambitions Small people always do that but the really great. Friendly neighbour there that power. Keep away from people who try to belittle your ambitions Small people always do that but the really great.</p>
+							<span>- john smith, <span class="client">client</span></span>
+						</div>
+
+						<div>
+							<p>Keep away from people who try to belittle your ambitions Small people always do that but the really great. Friendly neighbour there that power. Keep away from people who try to belittle your ambitions Small people always do that but the really great.</p>
+							<span>- Wahab Apple, <span class="client">client</span></span>
+						</div>
+
+						<div>
+							<p>Keep away from people who try to belittle your ambitions Small people always do that but the really great. Friendly neighbour there that power. Keep away from people who try to belittle your ambitions Small people always do that but the really great.</p>
+							<span>- Johny Bravo, <span class="client">client</span></span>
+						</div>
+
+					</div>
+				</div>
+
+
+			</div>
+
+			</div>
+		</section>
+
+
+
+		<!-- START OUR STUDIOS -->
+		<section class="sec-space">
+			<div class="container">
+
+				<div class="row">
+
+					<div class="col-md-12">
+						<div class="main-heading">
+							<h4>what-we-do</h4>
+							<br>
+							<h1>services</h1>
+							<span>who try to belittle your ambitions Small people always do that but the really great.</span>
+						</div>
+					</div>
+
+
+					<div class="clear"></div>
+					<div class="what-we-do">
+					<div id="tabbed-nav">
+								<ul>
+									<li><a>interior</a></li>
+									<li><a>Concept</a></li>
+									<li><a>Collaborate</a></li>
+									<li><a>Construct</a></li>
+									<li><a>Complete</a></li>
+								</ul>
+
+
+									<div>
+
+									<div>
+
+									   <div class="row">
+
+										<div class="col-md-6">
+											<div class="welcome-serv-img">
+												<img src="{% static 'images/services-img1.jpg' %}" alt="">
+											</div>
+										</div>
+
+										<div class="col-md-6">
+
+											<div class="detail">
+												<p><span class="big-text">K</span>eep away from people who try to belittle your ambitions Small people always do that but the really great. Friendly neighbour there that power. Architecture Theme Keep away from people who try to belittle your ambitions Small people always do that but the really great. <br/><br/>
+
+												who try to belittle your ambitions Small people always do that but the really great. Architecture Theme Friendly neighbour there that power.</p>
+												<a href="work.html" class="read-more-btn">Read More</a>
+
+											</div>
+
+										</div>
+
+									   </div>
+
+
+									</div>
+
+									<div>
+
+									   <div class="row">
+
+										<div class="col-md-6">
+											<div class="welcome-serv-img">
+												<img src="{% static 'images/services-img1.jpg' %}" alt="">
+											</div>
+										</div>
+
+										<div class="col-md-6">
+
+											<div class="detail">
+												<p><span class="big-text">C</span>oncept away from people who try to belittle your ambitions Small people always do that but the really great. Friendly neighbour there that power. Architecture Theme Keep away from people who try to belittle your ambitions Small people always do that but the really great. <br/><br/>
+
+												who try to belittle your ambitions Small people always do that but the really great. Architecture Theme Friendly neighbour there that power.</p>
+												<a href="work.html" class="read-more-btn">Read More</a>
+
+											</div>
+
+										</div>
+
+									   </div>
+
+
+									</div>
+
+									<div>
+
+									   <div class="row">
+
+										<div class="col-md-6">
+											<div class="welcome-serv-img">
+												<img src="{% static 'images/services-img1.jpg' %}" alt="">
+											</div>
+										</div>
+
+										<div class="col-md-6">
+
+											<div class="detail">
+												<p><span class="big-text">W</span>e are best in town belittle your ambitions Small people always do that but the really great. Friendly neighbour there that power. <br/><br/>
+
+												who try to belittle your ambitions Small people always do that but the really great. Architecture Theme Friendly neighbour there that power.</p>
+												<a href="work.html" class="read-more-btn">Read More</a>
+
+											</div>
+
+										</div>
+
+									   </div>
+
+
+									</div>
+
+									<div>
+
+									   <div class="row">
+
+										<div class="col-md-6">
+											<div class="welcome-serv-img">
+												<img src="{% static 'images/services-img1.jpg' %}" alt="">
+											</div>
+										</div>
+
+										<div class="col-md-6">
+
+											<div class="detail">
+												<p><span class="big-text">B</span>elittle your ambitions Small people always do that but the really great. Friendly neighbour there that power. Architecture Theme Keep away from people who try to belittle your ambitions Small people always do that but the really great. <br/><br/>
+
+												who try to belittle your ambitions Small people always do that but the really great. Architecture Theme Friendly neighbour there that power.</p>
+												<a href="work.html" class="read-more-btn">Read More</a>
+
+											</div>
+
+										</div>
+
+									   </div>
+
+
+									</div>
+
+									<div>
+
+									   <div class="row">
+
+										<div class="col-md-6">
+											<div class="welcome-serv-img">
+												<img src="{% static 'images/services-img1.jpg' %}" alt="">
+											</div>
+										</div>
+
+										<div class="col-md-6">
+
+											<div class="detail">
+												<p><span class="big-text">K</span>eep away from people who try to belittle your ambitions Small people always do that but the really great. Friendly neighbour there that power. Architecture Theme Keep away from people who try to belittle your ambitions Small people always do that but the really great. <br/><br/>
+
+												who try to belittle your ambitions Small people always do that but the really great. Architecture Theme Friendly neighbour there that power.</p>
+												<a href="work.html" class="read-more-btn">Read More</a>
+
+											</div>
+
+										</div>
+
+									   </div>
+
+
+									</div>
+
+									</div>
+
+					</div>
+
+					</div>
+
+
+				</div>
+
+			</div>
+		</section>
+
+	</div>
+
+
+
+  </div>
+
+
+
+{% endblock %}
+
+
+{% block jss %}
+{% endblock %}

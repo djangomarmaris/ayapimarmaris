@@ -1,0 +1,140 @@
+{% extends "base.html" %}
+
+{% load static i18n %}
+
+{% block css %}
+
+
+{% endblock %}
+
+{% block seo %}
+
+
+<title>A Yapı Projeler</title>
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="" />
+
+<link rel="canonical" href=""/>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+
+<meta name="robots" content="index,follow"/>
+
+<meta name="googlebot" content="index,follow"/>
+
+<meta name="author" content="İhsan Gürol Demirtaş">
+
+<meta name="publisher" content="2022.01" />
+
+{% endblock %}
+
+
+
+
+{% block content %}
+<br>
+<br>
+<div class="content">
+
+
+
+
+		<!-- START OUR STUDIOS -->
+		<section class="sec-space">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-md-12">
+						<div class="main-heading">
+							<h4>Intelligent</h4>
+							<h1>Projects</h1>
+							<span>A Yapı ile en iyi yaşam alanları sizlerinde hakkı.</span>
+						</div>
+					</div>
+
+					<div class="projects">
+
+						{% for x in products %}
+						<div class="col-md-6">
+							<div class="project-sec">
+
+								<div class="work">
+									<div class="grid">
+
+									<figure class="effect-sadie">
+										<div class="image"><img height="300" src="{% if x.image %}{{ x.image.url }}{% else %}{% endif %}" alt=""></div>
+
+										<figcaption>
+											<h2><img src="{% static 'images/plus.png' %}" alt=""></h2>
+											<a href="{{x.get_absolute_url}}"></a>
+										</figcaption>
+									</figure>
+
+									<div class="detail">
+										<span class="number">01</span>
+										<div class="text">
+											<h6>{{x.name}}</h6>
+											{% if x.sold == True %}
+											<span class="tags">Available</span>
+											{% elif x.sold == False %}
+											<span class="tags">Sold</span>
+											{% else %}
+											<span class="tags">A Yapi</span>
+											{% endif %}
+										</div>
+									</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+						{% endfor %}
+
+
+
+
+					</div>
+
+
+
+
+				</div>
+			</div>
+		</section>
+		<!-- END OUR STUDIOS -->
+
+
+
+		<!-- START OUR STUDIOS -->
+		<section class="sec-space clients-words">
+		  <div class="container">
+
+			<div class="col-md-12">
+				<div class="main-heading white">
+
+					<h1>A Yapi</h1>
+				</div>
+			</div>
+
+
+
+			</div>
+		</section>
+
+
+
+
+
+	</div>
+
+{% endblock %}
+
+
+
+
+
+{% block jss %}
+
+{% endblock %}

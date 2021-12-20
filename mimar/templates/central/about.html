@@ -1,0 +1,195 @@
+{% extends "base.html" %}
+
+{% load static i18n %}
+
+{% block css %}
+
+
+{% endblock %}
+
+{% block seo %}
+
+
+<title>A Yapı İletişim</title>
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="" />
+
+<link rel="canonical" href=""/>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+
+<meta name="robots" content="index,follow"/>
+
+<meta name="googlebot" content="index,follow"/>
+
+<meta name="author" content="İhsan Gürol Demirtaş">
+
+<meta name="publisher" content="2022.01" />
+
+{% endblock %}
+
+
+
+
+{% block content %}
+
+<div class="sub-banner">
+			<div class="container">
+				<div class="text-detail">
+					<h2>Biz Kimiz ?</h2>
+					<p>Doğru ve Güzel Yaşam ortamları</p>
+					<ul>
+						<li><a href="/">Ana Sayfa</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+    <!-- END SUB-BANNER -->
+
+{% for x in about %}
+	<!-- START CONTENT -->
+	<div class="sub-content">
+
+		<!-- START ABOUT US -->
+			<section>
+				<div class="container">
+
+					<div class="some-about">
+
+						<div class="row">
+
+						<div class="col-md-12">
+							<div id="about-slide" class="owl-carousel owl-theme">
+								<div class="item"><img width="1170" src="{% if x.image %}{{ x.image.url }}{% else %}{% endif %}" alt=""></div>
+								<div class="item"><img width="1170" src="{% if x.image2 %}{{ x.image2.url }}{% else %}{% endif %}" alt=""></div>
+								<div class="item"><img width="1170" src="{% if x.image3 %}{{ x.image3.url }}{% else %}{% endif %}" alt=""></div>
+							</div>
+						</div>
+
+						<div class="about-detail">
+
+						<div class="col-md-8">
+						<p><span class="big-text"></span>{{x.info | safe}}
+						</div>
+
+						<div class="col-md-4">
+						<ul>
+							<li><span class="number">1)</span> <span>Konsept ve Dizany</span></li>
+							<li><span class="number">2)</span> <span>Kalite Odaklılık</span></li>
+							<li><span class="number">3)</span> <span>Standartların Üstü</span></li>
+							<li><span class="number">4)</span> <span>Kaliteli Yaşam Alanları</span></li>
+							<li><span class="number">5)</span> <span>Mimari Değerler</span></li>
+							<li><span class="number">6)</span> <span>Mutlu Müşteri</span></li>
+						</ul>
+						</div>
+
+						</div>
+
+						</div>
+
+
+					</div>
+
+				</div>
+			</section>
+		<!-- END ABOUT US -->
+
+
+		<!-- START FUN FACTS -->
+		<section>
+			<div class="container">
+
+				<div class="row">
+					<div class="fun-facts">
+
+						<div class="col-md-3">
+							<img src="{% static 'images/big-wave.png' %}" alt="">
+						</div>
+
+
+						<div class="fun-facts-detail">
+						<div class="col-md-3">
+
+							<div>
+								<span class="counter">{{x.finish}}</span>
+								<span>Bitmiş Proje</span>
+							</div>
+
+						</div>
+
+						<div class="col-md-3">
+
+							<div>
+								<span class="counter">{{x.contunie}}</span>
+								<span>Devam Eden Proje</span>
+
+							</div>
+
+						</div>
+
+						<div class="col-md-3">
+
+							<div>
+								<span class="counter">{{x.bathroom}}</span>
+								<span>Banyo</span>
+							</div>
+
+						</div>
+						</div>
+
+
+					<div class="clear"></div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+		<!-- END FUN FACTS -->
+
+
+{% endfor %}
+
+
+
+
+
+
+		<!-- START CLIENTS -->
+		<section class="sec-space awards">
+		  <div class="container">
+
+			<div class="col-md-12">
+				<div class="main-heading white">
+
+					<br>
+					<h1>a yapı</h1>
+				</div>
+			</div>
+
+
+
+			</div>
+		</section>
+		<!-- END CLIENTS -->
+
+
+
+	</div>
+	<!-- END CONTENT -->
+
+
+
+
+
+
+{% endblock %}
+
+
+
+
+
+{% block jss %}
+
+{% endblock %}

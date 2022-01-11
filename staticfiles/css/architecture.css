@@ -274,7 +274,7 @@ span.big-text{ font-size:54px; font-weight:300; text-transform:uppercase;}
 
 
 /*..... CLIENTS WORDS ......*/
-.clients-words{ background:url(../images/1921.jpeg) no-repeat fixed; width: 100%; text-align: center; background-size:110%;}
+.clients-words{ background:url(/static/images/1921.jpeg) no-repeat ; width: 100%; text-align: center; background-size:110%;}
 .kind-words { margin:75px 0 0 0;}
 .kind-words p{ color:#fff; width: 75%; display: inline-block;}
 .kind-words span{font-family: 'Montserrat', sans-serif; font-size:18px; text-transform:uppercase; display:block; margin:10px 0 0 0;}
@@ -380,7 +380,7 @@ font-size: 26px; line-height: 60px; margin: 0 3px;}
 
 
 /*..... AWARDS ACHIEVEMENTS ......*/
-.awards{ background:url(../images/1923.jpeg) no-repeat fixed; width: 100%; background-size:110%;}
+.awards{ background:url(/static/images/1923.jpeg) no-repeat fixed; width: 100%; background-size:110%;}
 .achievements{ margin:90px 0 0 0; float:left;}
 .achievements .achiev-sec{ float:left; width:45%; margin:0 0 28px 0;} 
 .achievements .achiev-sec.right{ float:right;}

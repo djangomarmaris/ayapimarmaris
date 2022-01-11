@@ -1,27 +1,29 @@
 from django.shortcuts import render, get_object_or_404 , redirect
 from django.conf import settings
 from django.core.mail import send_mail
-from mimar.models import Product, Category, About, Comment, Service
+from mimar.models import Product, Category, About, Comment, Service, Sales ,Slider , Personel
 
 
 def index(request):
+    slider = Slider.objects.all()
     service = Service.objects.all()
     comment = Comment.objects.all()
-    all = Category.objects.all()
-    return render(request,'central/index.html',{'all':all,'comment':comment,'service':service})
+    all = Category.objects.all().order_by('-sold')
+    return render(request,'central/index.html',{'all':all,'comment':comment,'service':service,'slider':slider})
 
 
 
 def projects(request):
-    products = Category.objects.all()
+    products = Category.objects.all().order_by('-sold')
 
     return render(request,'central/projects.html',{'products':products})
 
 
 def about(request):
+    personel = Personel.objects.all()
     comment = Comment.objects.all()
     about = About.objects.all()
-    return render(request,'central/about.html',{'about':about,'comment':comment})
+    return render(request,'central/about.html',{'about':about,'comment':comment,'personel':personel})
 
 
 
@@ -58,8 +60,9 @@ def Show(request, category_slug = None):
     if category_slug:
         category = get_object_or_404(Category, slug=category_slug)
         products = products.filter(category=category)
+        sales = Sales.objects.filter(product=category)
 
-    return render(request,'central/show.html',{'category':category,'products':products})
+    return render(request,'central/show.html',{'category':category,'products':products,'sales':sales})
 
 
 

@@ -6536,6 +6536,7 @@ button.close {
 }
 @media (max-width: 1280px) {
 	.clients-words {background-size: 186%;}
+	.clients-words {background-image: url("/static/images/1921.jpeg");}
 	.contact-detail .office {width: 260px;	}
 }
 
@@ -6562,6 +6563,7 @@ button.close {
 	.mobile-menu .cd-primary-nav-trigger .cd-menu-icon.is-clicked::before, .mobile-menu .cd-primary-nav-trigger .cd-menu-icon.is-clicked::after {background-color: #fff;}
 	
 	.clients-words {background-size: 250%; background-position: 32% 0;}
+	.clients-words {background-image: url("/static/images/1921.jpeg");}
 	
 	
 	.projects .project-sec {margin: 0 0 58px 0;display: inline-block;}
@@ -6601,6 +6603,7 @@ button.close {
 @media (max-width: 768px) {
 	.cd-primary-nav a {font-size: 55px;}
 	.clients-words {background-size: 285%; background-position: 32% 0;}
+	.clients-words {background-image: url("/static/images/1921.jpeg");}
 	.z-tabs.medium > ul > li > a {font-size: 14px !important;}
 	.what-we-do .detail {margin: 42px 0 0 0;}
 	
@@ -6628,7 +6631,7 @@ button.close {
 	.main-heading h4 { font-size: 24px;margin: 0 0 8px 0;}
 	.main-heading span {font-size: 18px;}
 	.clients-words { background-size: 415%; background-position: 50% 0;}
-	
+	.clients-words {background-image: url("/static/images/1921.jpeg");}
 	.awards {background-size: 470%;}
 	.achievements .achiev-sec p{ width:78%;}
 	
@@ -6657,6 +6660,7 @@ button.close {
 	.projects .project-sec .detail span.number {font-size: 36px;}
 	.projects .project-sec .detail .text {text-align: center;}
 	.clients-words {background-size: 565%;}
+	.clients-words {background-image: url("/static/images/1921.jpeg");}
 	.kind-words p {width: 95%;}
 	.owl-buttons{ display:none;}
 	div#tabbed-nav {width: 96%;}

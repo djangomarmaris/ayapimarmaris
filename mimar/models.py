@@ -54,6 +54,23 @@ class Category(models.Model):
 
 
 
+class Sales(models.Model):
+    product = models.ForeignKey(Category, related_name='House', on_delete=models.CASCADE)
+    image = models.ImageField(upload_to='products/%y/%m/%d', blank=True)
+    image2 = models.ImageField(upload_to='products/%y/%m/%d', blank=True)
+    image3 = models.ImageField(upload_to='products/%y/%m/%d', blank=True)
+    image4 = models.ImageField(upload_to='products/%y/%m/%d', blank=True)
+    image5 = models.ImageField(upload_to='products/%y/%m/%d', blank=True)
+    image6 = models.ImageField(upload_to='products/%y/%m/%d', blank=True)
+    name = models.CharField(max_length=200, db_index=True)
+    list_info = RichTextUploadingField(blank=True)
+
+
+    def __str__(self):
+        return self.name
+
+
+
 class Product(models.Model):
     category = models.ForeignKey(Category, related_name='products', on_delete = models.CASCADE)
     product_no = models.CharField(max_length=25,default='Ürün Kodu Giriniz')
@@ -98,6 +115,33 @@ class Service(models.Model):
     picture = models.ImageField(upload_to='products/%y/%m/%d', blank=True)
     info = RichTextUploadingField(blank=True)
 
+
+
+    def __str__(self):
+        return self.name
+
+
+
+class Slider(models.Model):
+    name = models.CharField(max_length=200, db_index=True)
+    image = models.ImageField(upload_to='products/%y/%m/%d', blank=True)
+    small = models.CharField(max_length=200, db_index=True)
+    big = models.CharField(max_length=200, db_index=True)
+    link = models.CharField(max_length=200, db_index=True)
+
+
+
+    def __str__(self):
+        return self.name
+
+
+
+class Personel(models.Model):
+    image = models.ImageField(upload_to='products/%y/%m/%d', blank=True)
+    name = models.CharField(max_length=200, db_index=True)
+    position = models.CharField(max_length=200, db_index=True)
+    facebook = models.CharField(max_length=200, db_index=True)
+    instagram = models.CharField(max_length=200, db_index=True)
 
 
     def __str__(self):

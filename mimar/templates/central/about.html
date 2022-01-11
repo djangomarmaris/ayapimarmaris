@@ -147,7 +147,50 @@
 			</div>
 		</section>
 		<!-- END FUN FACTS -->
+<section class="sec-space">
+				<div class="container">
 
+					<div class="row">
+
+						<div class="col-md-12">
+						<div class="main-heading">
+							<h4>A Yapi</h4>
+							<h1>Değerlerimiz</h1>
+						</div>
+						</div>
+
+						<div class="our-team">
+							{% for p in personel %}
+							<div class="col-md-4">
+								<div class="team">
+									<img src="{% if p.image %}{{ p.image.url }}{% else %}{% endif %}" alt="">
+
+
+									<div class="detail">
+
+										<div class="name">
+											<h5>{{p.name}}</h5>
+											<span>{{p.position}}</span>
+										</div>
+
+										<div class="social-icons">
+											<a href="{{p.facebook}}"><i class="icon-facebook-1"></i></a>
+											<a href="{{p.instagram}}"><i class="icon-twitter-1"></i></a>
+										</div>
+									</div>
+
+								</div>
+							</div>
+							{% endfor %}
+							
+
+						<div class="clear"></div>
+						</div>
+
+					</div>
+
+				</div>
+			</section>
 
 {% endfor %}
 

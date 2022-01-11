@@ -39,10 +39,7 @@
 <div class="content">
 
 
-
-
-		<!-- START OUR STUDIOS -->
-		<section class="sec-space">
+	<section class="sec-space">
 			<div class="container">
 				<div class="row">
 
@@ -50,9 +47,51 @@
 						<div class="main-heading">
 							<h4>Intelligent</h4>
 							<h1>Projects</h1>
-							<span>A Yapı ile en iyi yaşam alanları sizlerinde hakkı.</span>
+
 						</div>
 					</div>
+
+{% for x in sales %}
+	<!-- START CONTENT -->
+	<div class="sub-content">
+
+		<!-- START ABOUT US -->
+			<section>
+				<div class="container">
+
+					<div class="some-about">
+
+						<div class="row">
+
+						<div class="col-md-12">
+							<div id="about-slide" class="owl-carousel owl-theme">
+
+								<div class="item"><img src="{% if x.image2 %}{{ x.image2.url }}{% else %}{% endif %}" alt=""></div>
+								<div class="item"><img src="{% if x.image3 %}{{ x.image3.url }}{% else %}{% endif %}" alt=""></div>
+								<div class="item"><img src="{% if x.image4 %}{{ x.image4.url }}{% else %}{% endif %}" alt=""></div>
+								<div class="item"><img src="{% if x.image5 %}{{ x.image5.url }}{% else %}{% endif %}" alt=""></div>
+								<div class="item"><img src="{% if x.image6 %}{{ x.image6.url }}{% else %}{% endif %}" alt=""></div>
+
+							</div>
+						</div>
+
+						<div class="about-detail">
+
+						<div class="col-md-12">
+						<p><span class="big-text"></span>{{x.list_info | safe}}
+						</div>
+
+						</div>
+
+						</div>
+
+
+					</div>
+
+				</div>
+			</section>
+
+{% endfor %}
 
 					<div class="projects">
 
@@ -102,12 +141,34 @@
 
 				</div>
 			</div>
+			</div>
 		</section>
-		<!-- END OUR STUDIOS -->
+		{% for s in sales %}
+		<section class="sec-space">
+		  <div class="container">
+
+						<div class="main-heading">
+							<h4>Intelligent</h4>
+							<h1>Son Durum</h1>
+
+						</div>
+
+			<div class="col-md-12">
+
+				<img src="{% if s.image %}{{ s.image.url }}{% else %}{% endif %}">
+
+			</div>
 
 
 
-		<!-- START OUR STUDIOS -->
+			</div>
+		</section>
+		{% endfor %}
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
 		<section class="sec-space clients-words">
 		  <div class="container">
 
